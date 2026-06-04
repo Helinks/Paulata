@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Paulata - Pijamas</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: #f8f8f8;
+            color: #222;
+        }
+
+        /* NAVBAR */
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 80px;
+            background: white;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: 1px;
+
+        }
+
+        .logo img {
+            margin: 0;
+            width: 140px;
+            height: 60px;
+        }
+
+        .menu {
+            display: flex;
+            gap: 30px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #444;
+            font-size: 15px;
+        }
+
+        .icons {
+            display: flex;
+            gap: 20px;
+            font-size: 18px;
+        }
+
+        /* HERO */
+
+        .hero {
+            height: 300px;
+            width: 100%;
+            background-image: url("./img/PhotoRoom-20230821_193859.png");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            padding: 0 80px;
+            position: relative;
+        }
+
+        /* capa oscura suave para que el texto se lea mejor */
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.25);
+        }
+
+        .hero-text {
+            position: relative;
+            color: white;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            font-weight: 600;
+        }
+
+        .hero-text p {
+            color: #eee;
+            margin-top: 5px;
+        }
+
+        /* FILTER BAR */
+
+        .filters {
+            display: flex;
+            justify-content: space-between;
+            padding: 25px 80px;
+            background: white;
+            border-bottom: 1px solid #eee;
+        }
+
+        .filter-group {
+            display: flex;
+            gap: 25px;
+        }
+
+        .filter {
+            color: #555;
+            cursor: pointer;
+        }
+
+        /* PRODUCTS */
+
+        .products {
+            padding: 50px 80px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 35px;
+        }
+
+        .product {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            transition: 0.25s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+        .product h3 {
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .price {
+            color: #777;
+            font-size: 14px;
+        }
+
+        /* PAGINATION */
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 40px;
+        }
+
+        .page {
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: white;
+            cursor: pointer;
+        }
+
+        .page.active {
+            background: black;
+            color: white;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #111;
+            color: white;
+            padding: 60px 80px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        footer h4 {
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        footer p {
+            color: #aaa;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .newsletter input {
+            padding: 10px;
+            width: 200px;
+            border: none;
+            margin-top: 10px;
+        }
+
+        .bottom {
+            margin-top: 40px;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            color: #888;
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo"><img src="./img/logo.jpeg"></div>
+
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Colecciones</a>
+            <a href="#">Blog</a>
+            <a href="#">Contacto</a>
+        </nav>
+
+        <div class="icons">
+            🔍 👤 🛒
+        </div>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+            <h1>Shop</h1>
+            <p>Home / Shop</p>
+        </div>
+    </section>
+
+    <!-- FILTERS -->
+
+    <section class="filters">
+
+        <div class="filter-group">
+            <div class="filter">Categorías</div>
+            <div class="filter">Color</div>
+            <div class="filter">Talla</div>
+            <div class="filter">Precio</div>
+        </div>
+
+        <div>
+            Ordenar por
+        </div>
+
+    </section>
+
+    <!-- PRODUCTS -->
+
+    <section class="products">
+
+        <div class="product">
+            <img src="./img/IMG-20251105-WA0018 (1).png">
+            <h3>Pijama Nube</h3>
+            <p class="price">$29</p>
+        </div>
+
+        <div class="product">
+            <img src="./img/IMG-20251105-WA0018 (2).png">
+            <h3>Pijama Estrella</h3>
+            <p class="price">$32</p>
+        </div>
+
+        <div class="product">
+            <img src="./img/IMG-20251214-WA0032.jpg">
+            <h3>Pijama Rosa</h3>
+            <p class="price">$30</p>
+        </div>
+
+        <div class="product">
+            <img src="./img/IMG-20251214-WA0033.jpg">
+            <h3>Pijama Luna</h3>
+            <p class="price">$28</p>
+        </div>
+
+        <div class="product">
+            <img src="./img/IMG-20251214-WA0034.jpg">
+            <h3>Pijama Algodón</h3>
+            <p class="price">$35</p>
+        </div>
+
+        <div class="product">
+            <img src="./img/IMG-20251214-WA0035.jpg">
+            <h3>Pijama Cozy</h3>
+            <p class="price">$31</p>
+        </div>
+
+        <div class="product">
+            <img src="./img/IMG-20251214-WA0036.jpg">
+            <h3>Pijama Relax</h3>
+            <p class="price">$27</p>
+        </div>
+
+        <div class="product">
+            <img src="./img/IMG-20251214-WA0037.jpg">
+            <h3>Pijama Invierno</h3>
+            <p class="price">$36</p>
+        </div>
+
+    </section>
+
+    <!-- PAGINATION -->
+
+    <div class="pagination">
+        <div class="page active">1</div>
+        <div class="page">2</div>
+        <div class="page">3</div>
+        <div class="page">→</div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-grid">
+
+            <div class="newsletter">
+                <h4>Recibe 20% de descuento</h4>
+                <p>Suscríbete para recibir ofertas.</p>
+                <input placeholder="Tu email">
+            </div>
+
+            <div>
+                <h4>Empresa</h4>
+                <p>Sobre nosotros</p>
+                <p>Blog</p>
+                <p>Tiendas</p>
+            </div>
+
+            <div>
+                <h4>Soporte</h4>
+                <p>Guía de tallas</p>
+                <p>Envíos</p>
+                <p>Devoluciones</p>
+            </div>
+
+            <div>
+                <h4>Síguenos</h4>
+                <p>Instagram</p>
+                <p>TikTok</p>
+                <p>Facebook</p>
+            </div>
+
+        </div>
+
+        <div class="bottom">
+            <p>© 2026 Paulata</p>
+            <p>Visa • Mastercard • Stripe</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
