@@ -91,10 +91,6 @@ export default function ContactPage() {
                                     confirmado la compra y validado el pago correspondiente.
                                 </p>
 
-                                <p className="mt-3 text-muted-foreground leading-7">
-                                    Los días hábiles comprenden de lunes a viernes, excluyendo sábados,
-                                    domingos y festivos vigentes en Colombia.
-                                </p>
                             </div>
 
                             {/* 3 */}
