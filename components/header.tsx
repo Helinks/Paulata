@@ -11,6 +11,7 @@ const navLinks = [
   { href: "/", label: "Inicio" },
   { href: "/shop", label: "Colecciones" },
   { href: "/contacto", label: "Contáctanos" },
+  { href: "/guiaTallas", label:"Guía de tallas"}
 ]
 
 export function Header() {

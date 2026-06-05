@@ -51,10 +51,13 @@ export default function CheckoutPage() {
     e.preventDefault()
     setSubmitting(true)
 
+    const genderLabel = (g: string) =>
+      g === "mujer" ? "Mujer" : g === "hombre" ? "Hombre" : "Niño"
+
     const itemLines = items
       .map(
         (item, i) =>
-          `${i + 1}. ${item.name} - Talla: ${item.size} - Cant: ${item.quantity} - $${(item.price * item.quantity).toFixed(2)}`
+          `${i + 1}. ${item.name} - ${genderLabel(item.gender)} - Talla: ${item.size} - Cant: ${item.quantity} - $${(item.price * item.quantity).toFixed(2)}`
       )
       .join("\n")
 
@@ -240,7 +243,7 @@ export default function CheckoutPage() {
                             {item.name}
                           </p>
                           <p className="text-xs text-muted-foreground">
-                            Talla: {item.size} &middot; Cant:{" "}
+                            {item.gender === "mujer" ? "Mujer" : item.gender === "hombre" ? "Hombre" : "Niño"} &middot; Talla: {item.size} &middot; Cant:{" "}
                             {item.quantity}
                           </p>
                           <p className="text-sm font-semibold text-foreground">

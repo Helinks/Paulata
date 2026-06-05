@@ -14,7 +14,7 @@ const quickLinks = [
 ]
 
 const customerService = [
-  { href: "/guia-tallas", label: "Guía de Tallas" },
+  { href: "/guiaTallas", label: "Guía de Tallas" },
   { href: "/devoluciones", label: "Devoluciones" },
   { href: "/envios", label: "Información de Envío" },
   { href: "/terminos", label: "Términos y Condiciones" },

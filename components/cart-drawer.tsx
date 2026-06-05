@@ -87,7 +87,7 @@ export function CartDrawer() {
                             {item.name}
                           </h4>
                           <p className="mt-0.5 text-xs text-muted-foreground">
-                            Talla: {item.size}
+                            {item.gender === "mujer" ? "Mujer" : item.gender === "hombre" ? "Hombre" : "Niño"} &middot; Talla: {item.size}
                           </p>
                         </div>
                         <button

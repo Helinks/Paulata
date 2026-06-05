@@ -6,6 +6,7 @@ export interface CartItem {
   id: string
   name: string
   price: number
+  gender: "mujer" | "hombre" | "nino"
   size: string
   quantity: number
   image: string
