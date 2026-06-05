@@ -56,9 +56,9 @@ export default function ContactPage() {
                                                 ["XXL", "104", "40", "102", "67", "52"],
                                             ].map((row) => (
                                                 <tr key={row[0]} className="border-b border-border/50">
-                                                    {row.map((cell) => (
-                                                        <td key={cell} className="py-3">
-                                                            {cell} cm
+                                                    {row.map((cell, index) => (
+                                                        <td key={`${row[0]}-${index}`} className="py-3">
+                                                            {index === 0 ? cell : `${cell} cm`}
                                                         </td>
                                                     ))}
                                                 </tr>
@@ -94,9 +94,9 @@ export default function ContactPage() {
                                                 ["XXL", "106", "49", "104", "75", "60"],
                                             ].map((row) => (
                                                 <tr key={row[0]} className="border-b border-border/50">
-                                                    {row.map((cell) => (
-                                                        <td key={cell} className="py-3">
-                                                            {cell} cm
+                                                    {row.map((cell, index) => (
+                                                        <td key={`${row[0]}-${index}`} className="py-3">
+                                                            {index === 0 ? cell : `${cell} cm`}
                                                         </td>
                                                     ))}
                                                 </tr>
@@ -134,9 +134,9 @@ export default function ContactPage() {
                                                 ["16", "84", "35", "86", "64", "41"],
                                             ].map((row) => (
                                                 <tr key={row[0]} className="border-b border-border/50">
-                                                    {row.map((cell) => (
-                                                        <td key={cell} className="py-3">
-                                                            {cell} cm
+                                                    {row.map((cell, index) => (
+                                                        <td key={`${row[0]}-${index}`} className="py-3">
+                                                            {index === 0 ? cell : `${cell} cm`}
                                                         </td>
                                                     ))}
                                                 </tr>
