@@ -16,13 +16,11 @@ const quickLinks = [
 const customerService = [
   { href: "/guiaTallas", label: "Guía de Tallas" },
   { href: "/devoluciones", label: "Devoluciones" },
-  { href: "/envios", label: "Información de Envío" },
-  { href: "/terminos", label: "Términos y Condiciones" },
+  { href: "/terminosCondiciones", label: "Términos y Condiciones" },
 ]
 
 const socialLinks = [
   { href: "https://www.instagram.com/paulata.co/", icon: Instagram, label: "Instagram" },
-  { href: "https://facebook.com", icon: Facebook, label: "Facebook" },
 ]
 
 export function Footer() {
@@ -123,15 +121,36 @@ export function Footer() {
               Método de pago:
             </span>
             <div className="flex items-center gap-2">
-                <div
-                  className="flex h-6 items-center justify-center rounded border border-border bg-background px-2"
-                >
-                  <span className="text-[10px] font-medium text-muted-foreground">
-                    Contraentrega
-                  </span>
-                </div>
-
+              <div
+                className="flex h-6 items-center justify-center rounded border border-border bg-background px-2"
+              >
+                <span className="text-[10px] font-medium text-muted-foreground">
+                  Contraentrega
+                </span>
+              </div>
+              <div
+                className="flex h-6 items-center justify-center rounded border border-border bg-background px-2"
+              >
+                <span className="text-[10px] font-medium text-muted-foreground">
+                  Nequi
+                </span>
+              </div>
+              <div
+                className="flex h-6 items-center justify-center rounded border border-border bg-background px-2"
+              >
+                <span className="text-[10px] font-medium text-muted-foreground">
+                  Daviplata
+                </span>
+              </div>
+              <div
+                className="flex h-6 items-center justify-center rounded border border-border bg-background px-2"
+              >
+                <span className="text-[10px] font-medium text-muted-foreground">
+                  Cuenta de ahorros Bancolombia
+                </span>
+              </div>
             </div>
+
           </div>
         </div>
       </div>

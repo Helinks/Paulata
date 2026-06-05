@@ -4,12 +4,6 @@ import { Mail, Phone, MapPin, Clock, Instagram, Facebook, Twitter } from "lucide
 
 const contactDetails = [
   {
-    icon: Mail,
-    label: "Email de soporte",
-    value: "hola@paulata.com",
-    href: "mailto:hola@paulata.com",
-  },
-  {
     icon: Phone,
     label: "Telefono",
     value: "3224732230 - 3053541277",
@@ -35,12 +29,6 @@ const socialLinks = [
     label: "Instagram",
     href: "https://www.instagram.com/paulata.co/",
     handle: "@paulata"
-  },
-  {
-    icon: Facebook,
-    label: "Facebook",
-    href: "https://facebook.com",
-    handle: "/paulata"
   },
 ]
 

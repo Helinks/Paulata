@@ -85,7 +85,6 @@ export default function ShopPage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             {/* Section Header */}
             <div className="mb-10 text-center">
-              <h3 className="mt-3 mb-5 text-foreground"> Unicamente pago Contra Entrega</h3>
               <h2 className="text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
                 Elige tu tela favorita
               </h2>
@@ -224,6 +223,7 @@ export default function ShopPage() {
                 <h3 className="font-semibold text-foreground">Pago Contra Entrega</h3>
                 <p className="mt-2 text-sm text-muted-foreground">
                   Pagas cuando llegue tu producto
+                  <h6>Aplica unicamente Bogotá, Madrid, Mosquera y soacha</h6>
                 </p>
               </div>
               <div className="text-center">
@@ -243,9 +243,9 @@ export default function ShopPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 15v-1a4 4 0 00-4-4H8m0 0l3 3m-3-3l3-3m9 14V5a2 2 0 00-2-2H6a2 2 0 00-2 2v16l4-2 4 2 4-2 4 2z" />
                   </svg>
                 </div>
-                <h3 className="font-semibold text-foreground">Devolución Fácil</h3>
+                <h3 className="font-semibold text-foreground">Otros metodos de pago</h3>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  30 días para cambios y devoluciones
+                  Nequi, Daviplata, cuenta de ahorros Bancolombia
                 </p>
               </div>
             </div>

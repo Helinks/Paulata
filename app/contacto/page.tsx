@@ -24,7 +24,7 @@ export default function ContactPage() {
                 Contactanos
               </h1>
               <p className="mt-4 text-lg text-muted-foreground text-pretty">
-                Estamos aqui para ayudarte. Ya sea que tengas preguntas sobre 
+                Estamos aqui para ayudarte. Ya sea que tengas preguntas sobre
                 nuestros productos, tu pedido, o simplemente quieras saludar.
               </p>
             </div>
@@ -34,22 +34,8 @@ export default function ContactPage() {
         {/* Contact Content */}
         <section className="py-16 sm:py-20 lg:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid gap-12 lg:grid-cols-5 lg:gap-16">
-              {/* Form Section */}
+            <div className="">
               <div className="lg:col-span-3">
-                <div className="mb-8">
-                  <h2 className="text-xl font-medium text-foreground">
-                    Envianos un mensaje
-                  </h2>
-                  <p className="mt-2 text-sm text-muted-foreground">
-                    Completa el formulario y te responderemos lo antes posible.
-                  </p>
-                </div>
-                <ContactForm />
-              </div>
-
-              {/* Info Sidebar */}
-              <div className="lg:col-span-2">
                 <ContactInfo />
               </div>
             </div>
@@ -64,14 +50,14 @@ export default function ContactPage() {
                 Preguntas frecuentes
               </h2>
               <p className="mt-3 text-muted-foreground">
-                Antes de escribirnos, quiza encuentres la respuesta que buscas 
+                Antes de escribirnos, quiza encuentres la respuesta que buscas
                 en nuestra seccion de preguntas frecuentes.
               </p>
               <div className="mt-8 grid gap-4 sm:grid-cols-3">
                 {[
-                  { question: "Tiempos de envio", answer: "3-5 dias habiles" },
-                  { question: "Politica de devolucion", answer: "30 dias para cambios" },
-                  { question: "Metodos de pago", answer: "Tarjeta, PayPal, transferencia" },
+                  { question: "Tiempos de envio", answer: "2 dias habiles" },
+                  { question: "Politica de devolucion", answer: "Sin devoliciones" },
+                  { question: "Metodos de pago", answer: "Nequi, Daviplata, cuenta de ahorros Bancolombia" },
                 ].map((faq) => (
                   <div
                     key={faq.question}
